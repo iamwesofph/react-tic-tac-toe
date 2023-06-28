@@ -176,17 +176,14 @@ function calculateWinnerSquares(squares) {
   return null;
 }
 
-function highlightWinnerSquares (winners) {
-  const elementId0 = "square-"+winners[0];
-  const elementId1 = "square-"+winners[1];
-  const elementId2 = "square-"+winners[2];
-  const square1 = document.getElementById(elementId0);
-  const square2 = document.getElementById(elementId1);
-  const square3 = document.getElementById(elementId2);
-  square1.classList.add('square-win');
-  square2.classList.add('square-win');
-  square3.classList.add('square-win');
+function highlightWinnerSquares(winners) {
+  for (const winner of winners) {
+    const elementId = "square-" + winner;
+    const square = document.getElementById(elementId);
+    square.classList.add('square-win');
+  }
 }
+
 
 function resetSquaresColor () {
   const allSquares = document.querySelectorAll(".square");
