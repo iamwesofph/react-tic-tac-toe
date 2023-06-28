@@ -184,7 +184,6 @@ function highlightWinnerSquares(winners) {
   }
 }
 
-
 function resetSquaresColor () {
   const allSquares = document.querySelectorAll(".square");
   allSquares.forEach(square => {
