@@ -71,7 +71,7 @@ export default function Game() {
         <button id='x' onClick={toggleSortOrder}>Toggle Sort Order</button>
         <ol>{sortAscending ? moves : moves.reverse()}</ol>
       </div>
-    </div>
+        </div>
   );
 }
 
